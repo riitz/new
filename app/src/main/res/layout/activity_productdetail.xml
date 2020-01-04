@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/productImg"
+            android:layout_width="88dp"
+            android:layout_height="78dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImg"
+            android:text="Product Name"
+            android:id="@+id/prodName"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prodName"
+            android:text="brand"
+            android:id="@+id/prodBrand"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prodBrand"
+            android:text="Price"
+            android:id="@+id/prodPrice" />
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prodPrice"
+            android:text="add to cart"/>
+
+    </RelativeLayout>
+
+
