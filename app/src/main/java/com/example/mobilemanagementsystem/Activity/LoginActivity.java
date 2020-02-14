@@ -18,7 +18,7 @@ import com.example.mobilemanagementsystem.Model.User;
 import com.example.mobilemanagementsystem.R;
 import com.example.mobilemanagementsystem.ServerResponse.UserResponse;
 import com.example.mobilemanagementsystem.URL.Url;
-import com.example.mobilemanagementsystem.bll.Interface.UserApi;
+import com.example.mobilemanagementsystem.Interface.UserApi;
 
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobilemanagementsystem.Adapater.prodAdapater;
-import com.example.mobilemanagementsystem.bll.Interface.productApi;
+import com.example.mobilemanagementsystem.Interface.productApi;
 import com.example.mobilemanagementsystem.Model.Product;
 import com.example.mobilemanagementsystem.R;
 import com.example.mobilemanagementsystem.URL.Url;
