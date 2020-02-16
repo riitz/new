@@ -1,2 +1,2 @@
-include ':app'
-rootProject.name='mobilemanagementsystem'
+include ':app', ':mobile_wear'
+rootProject.name='MobileManagementsystem'

@@ -14,17 +14,19 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mobilemanagementsystem.Interface.UserApi;
 import com.example.mobilemanagementsystem.Model.User;
 import com.example.mobilemanagementsystem.R;
 import com.example.mobilemanagementsystem.ServerResponse.UserResponse;
 import com.example.mobilemanagementsystem.URL.Url;
-import com.example.mobilemanagementsystem.Interface.UserApi;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
+
+    public SensorManager sensorMnager;
 
 
     private EditText etusername,etpassword;
@@ -79,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-
+//        lightsensor();
 
 
     }
@@ -136,6 +138,27 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+//
+//    private void lightsensor() {
+//        sensorManager=(SensorManager)getSystemService(SENSOR_SERVICE);
+//        Sensor sensor= sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
+//        SensorEventListener sensorEventListener= new SensorEventListener() {
+//            @Override
+//            public void onSensorChanged(SensorEvent event) {
+//                if( event.sensor.getType() == Sensor.TYPE_LIGHT) {
+//                    Toast.makeText(getApplicationContext(), "On SensorChanged" + event.values[0], Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//
+//            @Override
+//            public void onAccuracyChanged(Sensor sensor, int accuracy) {
+//
+//            }
+//        };
+//        sensorManager.registerListener(sensorEventListener,sensor,SensorManager.SENSOR_DELAY_FASTEST);
+//
+//    }
+//
 
 
 

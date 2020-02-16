@@ -48,8 +48,10 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent2);
                             break;
                         case R.id.editprofile:
-//                                openFragment(NotificationFragment.newInstance("", ""));
-                            return true;
+                            Intent intent3 = new Intent(MainActivity.this, EditProfile.class);
+                            startActivity(intent3);
+                            break;
+
                         case R.id.nearby:
 //                                openFragment(NotificationFragment.newInstance("", ""));
                             return true;

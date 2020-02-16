@@ -118,23 +118,25 @@ public class EditProfile extends AppCompatActivity {
     }
 
     private void saveImageOnly() {
-        File file = new File(imagePath);
-        RequestBody requestBody = RequestBody.create(MediaType.parse("multipart/form-data"), file);
-        MultipartBody.Part body = MultipartBody.Part.createFormData("imageFile",
-                file.getName(), requestBody);
+        if(imagePath!=null){
+            File file = new File(imagePath);
+            RequestBody requestBody = RequestBody.create(MediaType.parse("multipart/form-data"), file);
+            MultipartBody.Part body = MultipartBody.Part.createFormData("imageFile",
+                    file.getName(), requestBody);
 
-        UserApi usersAPI = Url.getInstance().create(UserApi.class);
-        Call<ImageResponse> responseBodyCall = usersAPI.uploadimage(body);
+            UserApi usersAPI = Url.getInstance().create(UserApi.class);
+            Call<ImageResponse> responseBodyCall = usersAPI.uploadimage(body);
 
-        StrictModeClass.StrictMode();
-        //Synchronous methid
-        try {
-            Response<ImageResponse> imageResponseResponse = responseBodyCall.execute();
-            imageName = imageResponseResponse.body().getFilename();
-            Toast.makeText(getApplicationContext(), "Image inserted" + imageName, Toast.LENGTH_SHORT).show();
-        } catch (IOException e) {
-            Toast.makeText(getApplicationContext(), "Error" + e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
-            e.printStackTrace();
+            StrictModeClass.StrictMode();
+            //Synchronous methid
+            try {
+                Response<ImageResponse> imageResponseResponse = responseBodyCall.execute();
+                imageName = imageResponseResponse.body().getFilename();
+                Toast.makeText(getApplicationContext(), "Image inserted" + imageName, Toast.LENGTH_SHORT).show();
+            } catch (IOException e) {
+                Toast.makeText(getApplicationContext(), "Error" + e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                e.printStackTrace();
+            }
         }
     }
 
