@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/rlMain">
+
+            <RelativeLayout
+                android:id="@+id/rlImage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:id="@+id/tvImage"
+                    android:layout_marginLeft="90dp"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/user"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlProduct"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rlImage"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/tvPname"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Product"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tvProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Product Name"
+
+                    android:layout_toRightOf="@+id/tvPname"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlBrand"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rlProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/tvBrand"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Brand"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tvBrandname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Brand Name"
+                    android:layout_toRightOf="@+id/tvBrand"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlPrice"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rlBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Price"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tvPriceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Product Price"
+                    android:layout_toRightOf="@+id/tvPrice"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlQuantity"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rlPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Quantity"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tvQuantityprodut"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Product Quantity"
+                    android:layout_toRightOf="@+id/tvQuantity"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/rlQuantity"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp">
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Cancel"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
